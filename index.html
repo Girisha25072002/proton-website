@@ -1,43 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Proton Information Tech Pvt Ltd</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      color: #0f172a;
+      margin-bottom: 20px;
+      border-left: 6px solid #2563eb;
+      padding-left: 10px;
+    }
+
+    .about p {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .card h3 {
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      background: #0f172a;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Proton Information Tech Pvt Ltd</h1>
-    <p class="tagline">Execution. Without Excuses.</p>
+    <p>Execution. Without Excuses.</p>
   </header>
 
   <section class="about">
-    <h2>About Us</h2>
-    <p>I’m Girisha—Director of Proton Information Tech Pvt Ltd, where clarity meets creativity and delivery means discipline...</p>
+    <h2>👤 About Us</h2>
+    <p>
+      I’m Girisha—Director of Proton Information Tech Pvt Ltd, where clarity meets creativity and delivery means discipline. 
+      Proton thrives on scaling with precision and adapting with quiet strength. From steering high-volume projects to crafting 
+      tributes that honor legacy, I lead with purpose, resilience, and vision. At Proton, we're more than tech experts—we're calm 
+      executors with a spark for storytelling and impact.
+    </p>
   </section>
 
-  <section class="services">
-    <h2>🧰 Services Offered</h2>
-    <ul>
-      <li><strong>Full-Stack Tech Solutions:</strong> End-to-end crisp delivery—front-end, back-end, and more.</li>
-      <li><strong>Custom Software Development:</strong> High-performance, scalable apps built to deliver.</li>
-      <li><strong>Project Management:</strong> Handle 25+ multi-domain project deliveries monthly.</li>
-      <li><strong>Design & Animation:</strong> Tribute decks, animated stories, and more.</li>
-      <li><strong>Tech Consulting:</strong> Strategy for growth, optimization, and revenue generation.</li>
-    </ul>
+  <section>
+    <h2>🛠️ Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Full-Stack Tech Solutions</h3>
+        <p>End-to-end execution with crisp delivery—front-end, back-end, and everything in between.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Software Development</h3>
+        <p>High-performance apps tailored for scalability and precision. Built to deliver, not just to exist.</p>
+      </div>
+      <div class="card">
+        <h3>Project Management & Delivery</h3>
+        <p>Seamless handling of multiple projects with 25+ deliveries/month across verticals.</p>
+      </div>
+      <div class="card">
+        <h3>Design & Animation Services</h3>
+        <p>Tribute decks, animated stories, and visual assets that merge legacy with storytelling.</p>
+      </div>
+      <div class="card">
+        <h3>Tech Consulting & Strategy</h3>
+        <p>Insights into scaling ops, optimizing delivery pipelines, and turning ideas into revenue.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="contact">
-    <h2>📞 Contact Us</h2>
-    <p><strong>Email:</strong> Girishainformationtech@proton.me</p>
-    <p><strong>Phone:</strong> +91 6360941608</p>
-    <p><strong>Location:</strong> Ramanagara, Karnataka, India 562159</p>
-    <p><strong>Hours:</strong> Monday–Saturday, 9 AM to 7 PM IST</p>
+  <section>
+    <h2>📞 Contact</h2>
+    <div class="contact">
+      <p><strong>Email:</strong> Girishainformationtech@proton.me</p>
+      <p><strong>Phone:</strong> +91 6360941608</p>
+      <p><strong>Location:</strong> Ramanagara, Bangalore, Karnataka 562159</p>
+      <p><strong>Working Hours:</strong> Monday–Saturday, 9 AM to 7 PM IST</p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Proton Information Tech Pvt Ltd</p>
+    &copy; 2025 Proton Information Tech Pvt Ltd — All rights reserved.
   </footer>
 </body>
 </html>
